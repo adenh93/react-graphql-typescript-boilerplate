@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "scripts": {
-    "start": "nodemon -e json,js,ts,graphql,prisma --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
+    "start": "nodemon -e json,js,ts,graphql,prisma --ignore 'src/**/*.spec.ts' --exec 'npm run codegen && ts-node' src/index.ts",
     "prisma-deploy": "prisma deploy -p prisma/prisma.yml",
     "prisma-delete": "prisma delete -p prisma/prisma.yml",
     "codegen": "graphql-codegen --config codegen.yml"
