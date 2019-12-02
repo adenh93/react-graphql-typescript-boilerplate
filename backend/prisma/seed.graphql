@@ -1,0 +1,11 @@
+mutation {
+  user1: createPost(
+    data: {
+      email: "joe.smith@prisma.com"
+      username: "joe.smith"
+      name: "Joe Smith"
+    }
+  ) {
+    id
+  }
+}
